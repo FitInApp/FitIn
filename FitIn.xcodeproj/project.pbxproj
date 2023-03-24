@@ -14,6 +14,11 @@
 		626FA66229CE302400C24E32 /* FitInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA66129CE302400C24E32 /* FitInTests.swift */; };
 		626FA66C29CE302400C24E32 /* FitInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA66B29CE302400C24E32 /* FitInUITests.swift */; };
 		626FA66E29CE302400C24E32 /* FitInUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA66D29CE302400C24E32 /* FitInUITestsLaunchTests.swift */; };
+		626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA67C29CE3C2200C24E32 /* Exercise.swift */; };
+		626FA67F29CE3C2E00C24E32 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA67E29CE3C2E00C24E32 /* User.swift */; };
+		626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68029CE3C7700C24E32 /* HomeView.swift */; };
+		626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68229CE3C8500C24E32 /* TrackerView.swift */; };
+		626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68429CE3C9C00C24E32 /* ExercisesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		626FA66729CE302400C24E32 /* FitInUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitInUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		626FA66B29CE302400C24E32 /* FitInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitInUITests.swift; sourceTree = "<group>"; };
 		626FA66D29CE302400C24E32 /* FitInUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitInUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		626FA67C29CE3C2200C24E32 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		626FA67E29CE3C2E00C24E32 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		626FA68029CE3C7700C24E32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		626FA68229CE3C8500C24E32 /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
+		626FA68429CE3C9C00C24E32 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,8 @@
 		626FA64E29CE302200C24E32 /* FitIn */ = {
 			isa = PBXGroup;
 			children = (
+				626FA67B29CE3C0600C24E32 /* Models */,
+				626FA67A29CE3BFF00C24E32 /* Views */,
 				626FA64F29CE302200C24E32 /* FitInApp.swift */,
 				626FA65129CE302200C24E32 /* ContentView.swift */,
 				626FA65329CE302300C24E32 /* Assets.xcassets */,
@@ -127,6 +139,25 @@
 				626FA66D29CE302400C24E32 /* FitInUITestsLaunchTests.swift */,
 			);
 			path = FitInUITests;
+			sourceTree = "<group>";
+		};
+		626FA67A29CE3BFF00C24E32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				626FA68029CE3C7700C24E32 /* HomeView.swift */,
+				626FA68229CE3C8500C24E32 /* TrackerView.swift */,
+				626FA68429CE3C9C00C24E32 /* ExercisesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		626FA67B29CE3C0600C24E32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				626FA67C29CE3C2200C24E32 /* Exercise.swift */,
+				626FA67E29CE3C2E00C24E32 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626FA67F29CE3C2E00C24E32 /* User.swift in Sources */,
 				626FA65229CE302200C24E32 /* ContentView.swift in Sources */,
 				626FA65029CE302200C24E32 /* FitInApp.swift in Sources */,
+				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
+				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
+				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
+				626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,6 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -417,6 +455,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FitIn/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitIn;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,6 +492,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FitIn/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitIn;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

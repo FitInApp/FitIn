@@ -7,20 +7,45 @@
 
 import SwiftUI
 
+let EXERCISE_VIEW_INDEX = 0
+let HOME_VIEW_INDEX = 1
+let TRACKER_VIEW_INDEX = 2
+
 struct ContentView: View {
+    
+    @State private var selectedTab = HOME_VIEW_INDEX
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack{
+            VStack{
+                TabView(selection: $selectedTab) {
+                    ExercisesView()
+                        .tabItem {
+                            Image( "WeightLifterIcon")
+                                .renderingMode(.template)
+                        }
+                        .tag(EXERCISE_VIEW_INDEX)
+                    HomeView()
+                        .tabItem {
+                            Image( "FireIcon")
+                                .renderingMode(.template)
+                        }
+                        .tag(HOME_VIEW_INDEX)
+                    TrackerView()
+                        .tabItem {
+                            Image("ChartIcon")
+                                .renderingMode(.template)
+                        }
+                        .tag(TRACKER_VIEW_INDEX)
+                }.accentColor(Color.black)
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro"))
     }
 }
+
