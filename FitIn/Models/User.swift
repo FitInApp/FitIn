@@ -8,3 +8,8 @@
 import Foundation
 
 // TODO: Create User object & implement sign in / sign up functionality.
+struct user {
+    let username: String
+    let password: String
+    let email: String?
+}
