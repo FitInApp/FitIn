@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DAE12EA29D0B3C400243136 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAE12E929D0B3C400243136 /* ParseSwift */; };
 		626FA65029CE302200C24E32 /* FitInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA64F29CE302200C24E32 /* FitInApp.swift */; };
 		626FA65229CE302200C24E32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA65129CE302200C24E32 /* ContentView.swift */; };
 		626FA65429CE302300C24E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626FA65329CE302300C24E32 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DAE12EA29D0B3C400243136 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +178,9 @@
 			dependencies = (
 			);
 			name = FitIn;
+			packageProductDependencies = (
+				3DAE12E929D0B3C400243136 /* ParseSwift */,
+			);
 			productName = FitIn;
 			productReference = 626FA64C29CE302200C24E32 /* FitIn.app */;
 			productType = "com.apple.product-type.application";
@@ -248,6 +253,10 @@
 				Base,
 			);
 			mainGroup = 626FA64329CE302200C24E32;
+			packageReferences = (
+				3DAE12E829D0B3C400243136 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				3DAE12EB29D13CBE00243136 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 626FA64D29CE302200C24E32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -450,9 +459,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FitIn/FitIn.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitIn/Preview Content\"";
+				DEVELOPMENT_TEAM = T4J53NH574;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitIn;
@@ -487,9 +498,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FitIn/FitIn.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitIn/Preview Content\"";
+				DEVELOPMENT_TEAM = T4J53NH574;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitIn;
@@ -644,6 +657,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DAE12E829D0B3C400243136 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		3DAE12EB29D13CBE00243136 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DAE12E929D0B3C400243136 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DAE12E829D0B3C400243136 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 626FA64429CE302200C24E32 /* Project object */;
 }
