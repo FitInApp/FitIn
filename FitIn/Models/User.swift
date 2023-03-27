@@ -6,10 +6,19 @@
 //
 
 import Foundation
+import ParseSwift
 
 // TODO: Create User object & implement sign in / sign up functionality.
-struct user {
-    let username: String
-    let password: String
-    let email: String?
+struct User: ParseUser {
+    var originalData: Data?
+    var objectId: String?
+    var createdAt: Date?
+    var updatedAt: Date?
+    var ACL: ParseSwift.ParseACL?
+    
+    var username: String?
+    var password: String?
+    var email: String?
+    var emailVerified: Bool?
+    var authData: [String : [String : String]?]?
 }
