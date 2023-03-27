@@ -255,7 +255,6 @@
 			mainGroup = 626FA64329CE302200C24E32;
 			packageReferences = (
 				3DAE12E829D0B3C400243136 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
-				3DAE12EB29D13CBE00243136 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 626FA64D29CE302200C24E32 /* Products */;
 			projectDirPath = "";
@@ -664,14 +663,6 @@
 			repositoryURL = "https://github.com/parse-community/Parse-Swift.git";
 			requirement = {
 				branch = main;
-				kind = branch;
-			};
-		};
-		3DAE12EB29D13CBE00243136 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				branch = master;
 				kind = branch;
 			};
 		};
