@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
+		3D681C4329D216F2005E9AE4 /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */; };
 		3DAE12EA29D0B3C400243136 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAE12E929D0B3C400243136 /* ParseSwift */; };
 		626FA65029CE302200C24E32 /* FitInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA64F29CE302200C24E32 /* FitInApp.swift */; };
 		626FA65229CE302200C24E32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA65129CE302200C24E32 /* ContentView.swift */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D04865529D2A4BF00297B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3D681C3F29D214BF005E9AE4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AllertaStencil-Regular.ttf"; sourceTree = "<group>"; };
 		626FA64C29CE302200C24E32 /* FitIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		626FA64F29CE302200C24E32 /* FitInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitInApp.swift; sourceTree = "<group>"; };
 		626FA65129CE302200C24E32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D681C4129D2169E005E9AE4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		626FA64329CE302200C24E32 = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +120,13 @@
 		626FA64E29CE302200C24E32 /* FitIn */ = {
 			isa = PBXGroup;
 			children = (
+				3D04865529D2A4BF00297B16 /* Info.plist */,
 				626FA67B29CE3C0600C24E32 /* Models */,
 				626FA67A29CE3BFF00C24E32 /* Views */,
 				626FA64F29CE302200C24E32 /* FitInApp.swift */,
 				626FA65129CE302200C24E32 /* ContentView.swift */,
 				626FA65329CE302300C24E32 /* Assets.xcassets */,
+				3D681C4129D2169E005E9AE4 /* Fonts */,
 				626FA65529CE302300C24E32 /* FitIn.entitlements */,
 				626FA65629CE302300C24E32 /* Preview Content */,
 			);
@@ -149,6 +164,7 @@
 				626FA68029CE3C7700C24E32 /* HomeView.swift */,
 				626FA68229CE3C8500C24E32 /* TrackerView.swift */,
 				626FA68429CE3C9C00C24E32 /* ExercisesView.swift */,
+				3D681C3F29D214BF005E9AE4 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D681C4329D216F2005E9AE4 /* AllertaStencil-Regular.ttf in Resources */,
 				626FA65829CE302300C24E32 /* Preview Assets.xcassets in Resources */,
 				626FA65429CE302300C24E32 /* Assets.xcassets in Resources */,
 			);
@@ -304,6 +321,7 @@
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
+				3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */,
 				626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +483,7 @@
 				DEVELOPMENT_TEAM = T4J53NH574;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitIn/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FitIn;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -504,6 +523,7 @@
 				DEVELOPMENT_TEAM = T4J53NH574;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitIn/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FitIn;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
