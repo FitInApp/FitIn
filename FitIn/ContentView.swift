@@ -42,7 +42,10 @@ struct ContentView: View {
         }
         .navigationBarBackButtonHidden()
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                // TODO: Place logo on left side of navbar
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Sign Out") {
                     User.logout() { result in
                         switch result {
@@ -52,7 +55,6 @@ struct ContentView: View {
                         case .failure(let error):
                             print("❌ LOGOUT ERROR: \(error.localizedDescription)")
                         }
-                        
                     }
                 }
             }
