@@ -46,7 +46,7 @@ struct ContentView: View {
                 // TODO: Place logo on left side of navbar
             }
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button("Sign Out") {
+                Button("Log Out") {
                     User.logout() { result in
                         switch result {
                         case .success:
