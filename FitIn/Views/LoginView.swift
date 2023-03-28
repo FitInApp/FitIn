@@ -56,8 +56,8 @@ struct LoginView: View {
                         Button {
                             User.login(username: username, password: password) { result in
                                 switch result {
-                                case .success(let user):
-                                    print("✅ Successfully logged in as user: \(user)")
+                                case .success:
+                                    print("✅ Successfully logged in as user: \(username)")
                                     path.append("ContentView")
                                 case .failure(let error):
                                     print("❌ LOGIN ERROR: \(error.localizedDescription)")
@@ -79,7 +79,7 @@ struct LoginView: View {
                         HStack {
                             Text("Don't have an account?")
                             Button {
-                                
+                                // TODO: Append Sign Up functionality
                             } label: {
                                 Text("Sign Up")
                                     .font(.headline)
@@ -101,9 +101,7 @@ struct LoginView: View {
             }
         }
         .alert(alertMessage, isPresented: $showingAlert, actions: {
-            Button("OK", role: .cancel) {
-                
-            }
+            Button("OK", role: .cancel) {}
         })
         .onAppear {
             if User.current != nil {
