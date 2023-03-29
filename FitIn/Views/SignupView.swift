@@ -28,7 +28,7 @@ struct SignupView: View {
                     .font(.custom("AllertaStencil-Regular", size: 40))
                     .padding(.trailing, 180)
                 Spacer(minLength: 45)
-                VStack (spacing: 49.0) {
+                VStack (spacing: 35.0) {
                     VStack(spacing: 25.0) {
                         TextField("Email", text: $email)
                             .frame(width: 280)

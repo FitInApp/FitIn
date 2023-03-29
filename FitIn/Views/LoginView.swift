@@ -28,7 +28,7 @@ struct LoginView: View {
                     .font(.custom("AllertaStencil-Regular", size: 40))
                     .padding(.trailing, 208)
                 Spacer(minLength: 45)
-                VStack (spacing: 49.0){
+                VStack (spacing: 35.0){
                     VStack(spacing: 25.0) {
                         TextField("Username", text: $username)
                             .frame(width: 280)
