@@ -1,35 +1,45 @@
 //
-//  LoginView.swift
+//  SignupView.swift
 //  FitIn
 //
-//  Created by Edlando Eliacin on 3/27/23.
+//  Created by Edlando Eliacin on 3/28/23.
 //
 
 import SwiftUI
 import ParseSwift
 
-struct LoginView: View {
+struct SignupView: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var username = ""
     @State private var password = ""
+    @State private var email = ""
     @State private var showingAlert = false
     @State private var alertMessage = ""
     @State private var path = NavigationPath()
     
     
     var body: some View {
-        NavigationStack(path: $path) {
             VStack {
-                Image("Login-page-splash-image")
+                Image("Signup-page-splash-image")
                     .resizable()
                     .frame(height: 254)
                     .ignoresSafeArea()
                 Spacer()
-                Text("Login".uppercased())
+                Text("Sign up".uppercased())
                     .font(.custom("AllertaStencil-Regular", size: 40))
-                    .padding(.trailing, 208)
+                    .padding(.trailing, 180)
                 Spacer(minLength: 45)
-                VStack (spacing: 49.0){
+                VStack (spacing: 49.0) {
                     VStack(spacing: 25.0) {
+                        TextField("Email", text: $email)
+                            .frame(width: 280)
+                            .padding()
+                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(red: 0.9098039215686274, green: 0.9098039215686274, blue: 0.9098039215686274)/*@END_MENU_TOKEN@*/)
+                            .cornerRadius(8)
+                            .foregroundColor(Color.black)
+                            .font(.headline)
+                            .disableAutocorrection(true)
+                            .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
                         TextField("Username", text: $username)
                             .frame(width: 280)
                             .padding()
@@ -39,8 +49,6 @@ struct LoginView: View {
                             .font(.headline)
                             .disableAutocorrection(true)
                             .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
-                            
-                        
                         SecureField("Password", text: $password)
                             .frame(width: 280)
                             .padding()
@@ -51,22 +59,26 @@ struct LoginView: View {
                             .disableAutocorrection(true)
                             .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
                     }
-                    
                     VStack {
                         Button {
-                            User.login(username: username, password: password) { result in
+                            var newUser = User()
+                            newUser.email = email
+                            newUser.username = username
+                            newUser.password = password
+                            
+                            newUser.signup { result in
                                 switch result {
-                                case .success:
-                                    print("✅ Successfully logged in as user: \(username)")
-                                    path.append("ContentView")
+                                case .success(let user):
+                                    print("✅ Successfully sign up user \(user)")
+                                    dismiss()
                                 case .failure(let error):
-                                    print("❌ LOGIN ERROR: \(error.localizedDescription)")
+                                    print("❌ SIGN-UP ERROR: \(error.localizedDescription)")
                                     alertMessage = "LOGIN ERROR: \(error.localizedDescription)"
                                     showingAlert = true
                                 }
                             }
                         } label: {
-                            Text("Login")
+                            Text("Sign Up")
                                 .font(.headline)
                                 .foregroundColor(.white)
                                 .frame(width: 280)
@@ -75,11 +87,11 @@ struct LoginView: View {
                                 .cornerRadius(8)
                         }
                         HStack {
-                            Text("Don't have an account?")
+                            Text("Have an account?")
                             Button {
-                                path.append("SignupView")
+                                dismiss()
                             } label: {
-                                Text("Sign Up")
+                                Text("Log in")
                                     .font(.headline)
                                     .foregroundColor(Color.blue)
                             }
@@ -90,29 +102,16 @@ struct LoginView: View {
                 .padding(.trailing, 25)
                 Spacer()
             }
-            .navigationDestination(for: String.self) { view in
-                if view == "ContentView" {
-                    ContentView()
-                }
-                if view == "SignupView" {
-                    SignupView()
-                }
-            }
+            .navigationBarBackButtonHidden()
+            .alert(alertMessage, isPresented: $showingAlert, actions: {
+                Button("OK", role: .cancel) {}
+            })
         }
-        .alert(alertMessage, isPresented: $showingAlert, actions: {
-            Button("OK", role: .cancel) {}
-        })
-        .onAppear {
-            if User.current != nil {
-                print("✅ Successfully logged in!")
-                path.append("ContentView")
-            }
-        }
+        
     }
-}
 
-struct LoginView_Previews: PreviewProvider {
+struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        SignupView()
     }
 }

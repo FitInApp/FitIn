@@ -42,7 +42,7 @@ struct ContentView: View {
         }
         .navigationBarBackButtonHidden()
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem(placement: .navigationBarLeading) {
                 // TODO: Place logo on left side of navbar
             }
             ToolbarItem(placement: .navigationBarTrailing) {
