@@ -10,6 +10,7 @@ import ParseSwift
 
 struct SignupView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) var colorScheme
     @State private var username = ""
     @State private var password = ""
     @State private var email = ""
@@ -21,14 +22,14 @@ struct SignupView: View {
             VStack {
                 Image("Signup-page-splash-image")
                     .resizable()
-                    .frame(height: 254)
+                    .frame(height: 254
+                    )
                     .ignoresSafeArea()
                 Spacer()
-                Text("Sign up".uppercased())
-                    .font(.custom("AllertaStencil-Regular", size: 40))
-                    .padding(.trailing, 180)
-                Spacer(minLength: 45)
-                VStack (spacing: 35.0) {
+                VStack (alignment: .center, spacing: 35.0) {
+                    Text("SIGN UP")
+                        .font(.custom("AllertaStencil-Regular", size: 40))
+                        .frame(maxWidth: .infinity, alignment: .center)
                     VStack(spacing: 25.0) {
                         TextField("Email", text: $email)
                             .frame(width: 280)
@@ -37,6 +38,7 @@ struct SignupView: View {
                             .cornerRadius(8)
                             .foregroundColor(Color.black)
                             .font(.headline)
+                            .keyboardType(.emailAddress)
                             .disableAutocorrection(true)
                             .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
                         TextField("Username", text: $username)
@@ -79,10 +81,10 @@ struct SignupView: View {
                         } label: {
                             Text("Sign Up")
                                 .font(.headline)
-                                .foregroundColor(.white)
+                                .foregroundColor(colorScheme == .dark ? Color.black : Color.white)
                                 .frame(width: 280)
                                 .padding()
-                                .background(Color.black)
+                                .background(colorScheme == .dark ? Color.white : Color.black)
                                 .cornerRadius(8)
                         }
                         HStack {
@@ -98,7 +100,8 @@ struct SignupView: View {
                     }
                     Spacer()
                 }
-                .padding(.trailing, 25)
+                .frame(width: 280)
+                .padding()
                 Spacer()
             }
             .navigationBarBackButtonHidden()
