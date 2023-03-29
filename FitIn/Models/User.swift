@@ -8,7 +8,6 @@
 import Foundation
 import ParseSwift
 
-// TODO: Create User object & implement sign in / sign up functionality.
 struct User: ParseUser {
     var originalData: Data?
     var objectId: String?
