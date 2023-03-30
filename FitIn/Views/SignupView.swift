@@ -16,7 +16,6 @@ struct SignupView: View {
     @State private var email = ""
     @State private var showingAlert = false
     @State private var alertMessage = ""
-    @State private var path = NavigationPath()
     
     var body: some View {
             VStack {
