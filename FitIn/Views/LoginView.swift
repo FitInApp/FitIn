@@ -14,7 +14,7 @@ struct LoginView: View {
     @State private var showingAlert = false
     @State private var alertMessage = ""
     @State private var path = NavigationPath()
-    
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -24,32 +24,32 @@ struct LoginView: View {
                     .frame(height: 254)
                     .ignoresSafeArea()
                 Spacer()
-                Text("Login".uppercased())
-                    .font(.custom("AllertaStencil-Regular", size: 40))
-                    .padding(.trailing, 208)
-                Spacer(minLength: 45)
-                VStack (spacing: 49.0){
+                
+                VStack (alignment: .center, spacing: 35.0){
+                    Text("Login".uppercased())
+                        .font(.custom("AllertaStencil-Regular", size: 40))
+                        .frame(maxWidth: .infinity, alignment: .center)
                     VStack(spacing: 25.0) {
                         TextField("Username", text: $username)
                             .frame(width: 280)
                             .padding()
-                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(red: 0.9098039215686274, green: 0.9098039215686274, blue: 0.9098039215686274)/*@END_MENU_TOKEN@*/)
+                            .background(Color(red: 0.9098039215686274, green: 0.9098039215686274, blue: 0.9098039215686274))
                             .cornerRadius(8)
                             .foregroundColor(Color.black)
                             .font(.headline)
                             .disableAutocorrection(true)
-                            .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
+                            .textInputAutocapitalization(.never)
                             
                         
                         SecureField("Password", text: $password)
                             .frame(width: 280)
                             .padding()
-                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(red: 0.9098039215686274, green: 0.9098039215686274, blue: 0.9098039215686274)/*@END_MENU_TOKEN@*/)
+                            .background(Color(red: 0.9098039215686274, green: 0.9098039215686274, blue: 0.9098039215686274))
                             .cornerRadius(8)
                             .foregroundColor(Color.black)
                             .font(.headline)
                             .disableAutocorrection(true)
-                            .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
+                            .textInputAutocapitalization(.never)
                     }
                     
                     VStack {
@@ -68,18 +68,16 @@ struct LoginView: View {
                         } label: {
                             Text("Login")
                                 .font(.headline)
-                                .foregroundColor(.white)
+                                .foregroundColor(colorScheme == .dark ? Color.black : Color.white)
                                 .frame(width: 280)
                                 .padding()
-                                .background(Color.black)
+                                .background(colorScheme == .dark ? Color.white : Color.black)
                                 .cornerRadius(8)
                         }
-                        
-                        
                         HStack {
                             Text("Don't have an account?")
                             Button {
-                                // TODO: Append Sign Up functionality
+                                path.append("SignupView")
                             } label: {
                                 Text("Sign Up")
                                     .font(.headline)
@@ -89,14 +87,16 @@ struct LoginView: View {
                     }
                     Spacer()
                 }
-                .padding(.trailing, 25)
+                .frame(width: 280)
+                .padding()
                 Spacer()
             }
             .navigationDestination(for: String.self) { view in
                 if view == "ContentView" {
                     ContentView()
-                } else if view == "SignupView" {
-                    // TODO: Take user to sign up view
+                }
+                if view == "SignupView" {
+                    SignupView()
                 }
             }
         }
