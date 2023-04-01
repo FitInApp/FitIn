@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206B6C0A29D7C9D200FA3AD3 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B6C0929D7C9D200FA3AD3 /* WorkoutListView.swift */; };
+		206B6C0C29D7CAE400FA3AD3 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B6C0B29D7CAE400FA3AD3 /* WorkoutDetailView.swift */; };
+		206B6C0E29D7CBE800FA3AD3 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B6C0D29D7CBE800FA3AD3 /* Workout.swift */; };
 		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
 		3D681C4329D216F2005E9AE4 /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */; };
 		3DAE12EA29D0B3C400243136 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAE12E929D0B3C400243136 /* ParseSwift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		206B6C0929D7C9D200FA3AD3 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
+		206B6C0B29D7CAE400FA3AD3 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		206B6C0D29D7CBE800FA3AD3 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		3D04865529D2A4BF00297B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D681C3F29D214BF005E9AE4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AllertaStencil-Regular.ttf"; sourceTree = "<group>"; };
@@ -167,7 +173,9 @@
 				626FA68229CE3C8500C24E32 /* TrackerView.swift */,
 				626FA68429CE3C9C00C24E32 /* ExercisesView.swift */,
 				3D681C3F29D214BF005E9AE4 /* LoginView.swift */,
+				206B6C0B29D7CAE400FA3AD3 /* WorkoutDetailView.swift */,
 				3DDEA7EE29D3E871000FAA18 /* SignupView.swift */,
+				206B6C0929D7C9D200FA3AD3 /* WorkoutListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 			children = (
 				626FA67C29CE3C2200C24E32 /* Exercise.swift */,
 				626FA67E29CE3C2E00C24E32 /* User.swift */,
+				206B6C0D29D7CBE800FA3AD3 /* Workout.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +329,8 @@
 			files = (
 				3DDEA7EF29D3E871000FAA18 /* SignupView.swift in Sources */,
 				626FA67F29CE3C2E00C24E32 /* User.swift in Sources */,
+				206B6C0C29D7CAE400FA3AD3 /* WorkoutDetailView.swift in Sources */,
+				206B6C0A29D7C9D200FA3AD3 /* WorkoutListView.swift in Sources */,
 				626FA65229CE302200C24E32 /* ContentView.swift in Sources */,
 				626FA65029CE302200C24E32 /* FitInApp.swift in Sources */,
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
@@ -327,6 +338,7 @@
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
 				3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */,
 				626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */,
+				206B6C0E29D7CBE800FA3AD3 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitIn/Preview Content\"";
-				DEVELOPMENT_TEAM = T4J53NH574;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitIn/Info.plist;
@@ -507,7 +519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.COP4655.FitIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,7 +536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitIn/Preview Content\"";
-				DEVELOPMENT_TEAM = T4J53NH574;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitIn/Info.plist;
@@ -547,7 +559,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.COP4655.FitIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
