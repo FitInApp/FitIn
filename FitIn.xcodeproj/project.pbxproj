@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		305C6C2529D8FA370008A589 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2429D8FA370008A589 /* Posts.swift */; };
 		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
 		3D681C4329D216F2005E9AE4 /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */; };
 		3DAE12EA29D0B3C400243136 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAE12E929D0B3C400243136 /* ParseSwift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		305C6C2429D8FA370008A589 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		3D04865529D2A4BF00297B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D681C3F29D214BF005E9AE4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AllertaStencil-Regular.ttf"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				626FA67C29CE3C2200C24E32 /* Exercise.swift */,
 				626FA67E29CE3C2E00C24E32 /* User.swift */,
+				305C6C2429D8FA370008A589 /* Posts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
+				305C6C2529D8FA370008A589 /* Posts.swift in Sources */,
 				3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */,
 				626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */,
 			);
@@ -484,7 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitIn/Preview Content\"";
-				DEVELOPMENT_TEAM = T4J53NH574;
+				DEVELOPMENT_TEAM = 62UNRNFLPS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitIn/Info.plist;
@@ -507,7 +511,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.COP4655.FitIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,7 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitIn/Preview Content\"";
-				DEVELOPMENT_TEAM = T4J53NH574;
+				DEVELOPMENT_TEAM = 62UNRNFLPS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitIn/Info.plist;
@@ -547,7 +553,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.COP4655.FitIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
