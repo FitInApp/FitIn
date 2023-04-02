@@ -17,9 +17,9 @@ struct HomeView: View {
         let currentDateTime = Date()
         
         newPost.createObject(user: User.current!, imageID: URL(string:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fpicsum.photos%2F&psig=AOvVaw0r0JFlxQy2lhU9rRAUhHrS&ust=1680486652876000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJCwquGKiv4CFQAAAAAdAAAAABAE")!, date: currentDateTime, weight: weight, calories: calories)
-        
     }
     var body: some View {
+        let items: [Post] = newPost.readObjects()!
         VStack{
             Button(action: {addPost()
                 
@@ -31,8 +31,9 @@ struct HomeView: View {
             
             ScrollView {
                 VStack(spacing: 20) {
-                    ForEach(0..<10) {
-                        Text("Item \($0)")
+                    ForEach(items, id: \.objectId) { item in
+
+                        Text(item.weight!)
                             .foregroundColor(.white)
                             .font(.largeTitle)
                             .frame(width: 300, height: 200)
