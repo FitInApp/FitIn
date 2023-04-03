@@ -2,7 +2,7 @@
 //  WorkoutDetailView.swift
 //  FitIn
 //
-//  Created by [Your Name] on [Date]
+//  Created by Matias Fuenzalida
 //
 
 import SwiftUI
