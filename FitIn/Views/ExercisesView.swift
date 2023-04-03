@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct ExercisesView: View {
+    let muscles: [MuscleGroup] = MuscleGroup.muscleGroups
+    
     var body: some View {
-        Text("Exercises")
+        NavigationView {
+            List(muscles, id: \.id) { muscle in
+                // TODO: Navigation Link
+                    HStack {
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(muscle.muscleName)
+                                .fontWeight(.semibold)
+                                .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                            Text(muscle.descriptions)
+                                .font(.subheadline)
+                                .lineLimit(2)
+                        }
+                        Spacer()
+                        Image(muscle.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 100)
+                }
+            }
+        }
+        .navigationTitle("Workouts")
     }
 }
 
