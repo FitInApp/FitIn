@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+import SwiftUI
+import ParseSwift
+
+struct WorkoutView: View {
+    var body: some View {
+        
+        Text("Workout")
+    }
+}
+    
+    struct WorkoutView_Previews: PreviewProvider {
+        static var previews: some View {
+            WorkoutView()
+        }
+    }
