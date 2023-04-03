@@ -4,7 +4,6 @@
 //
 //  Created by Ailany Rodriguez on 3/24/23.
 //
-
 import SwiftUI
 
 struct ExercisesView: View {
