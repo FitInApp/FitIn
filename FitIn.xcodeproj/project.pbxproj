@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		206B836829DB6AE100FBFFFC /* WorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B836729DB6AE100FBFFFC /* WorkoutData.swift */; };
 		206B836A29DB6BD800FBFFFC /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B836929DB6BD800FBFFFC /* Workout.swift */; };
 		206B836E29DB6EAE00FBFFFC /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B836D29DB6EAE00FBFFFC /* WorkoutView.swift */; };
 		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
@@ -46,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		206B836729DB6AE100FBFFFC /* WorkoutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutData.swift; sourceTree = "<group>"; };
 		206B836929DB6BD800FBFFFC /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		206B836D29DB6EAE00FBFFFC /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		3D04865529D2A4BF00297B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 				626FA67C29CE3C2200C24E32 /* Exercise.swift */,
 				626FA67E29CE3C2E00C24E32 /* User.swift */,
 				206B836929DB6BD800FBFFFC /* Workout.swift */,
-				206B836729DB6AE100FBFFFC /* WorkoutData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,7 +328,6 @@
 				626FA67F29CE3C2E00C24E32 /* User.swift in Sources */,
 				626FA65229CE302200C24E32 /* ContentView.swift in Sources */,
 				626FA65029CE302200C24E32 /* FitInApp.swift in Sources */,
-				206B836829DB6AE100FBFFFC /* WorkoutData.swift in Sources */,
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
 				206B836A29DB6BD800FBFFFC /* Workout.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
