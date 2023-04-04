@@ -16,7 +16,8 @@ struct HomeView: View {
         print("Add Post Entry")
         let currentDateTime = Date()
         
-        newPost.createObject(user: User.current!, imageID: URL(string:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fpicsum.photos%2F&psig=AOvVaw0r0JFlxQy2lhU9rRAUhHrS&ust=1680486652876000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJCwquGKiv4CFQAAAAAdAAAAABAE")!, date: currentDateTime, weight: weight, calories: calories)
+        newPost.createObject(user: User.current!, imageID: URL(string:"https://picsum.photos/800")!, date: currentDateTime, weight: weight, calories: calories)
+        print(newPost.readObjects()!)
     }
     var body: some View {
         let items: [Post] = newPost.readObjects()!
@@ -25,19 +26,14 @@ struct HomeView: View {
                 
             }) {
                 HStack {
-                    Text("Add Post").foregroundColor(.white).padding()
+                    Text("TEMP Add Post").foregroundColor(.white).padding()
                 }
             }.background(Color.black).cornerRadius(30)
             
             ScrollView {
                 VStack(spacing: 20) {
                     ForEach(items, id: \.objectId) { item in
-
-                        Text(item.weight!)
-                            .foregroundColor(.white)
-                            .font(.largeTitle)
-                            .frame(width: 300, height: 200)
-                            .background(.red)
+                        UserPost(userId: item.user!, text: item.weight!,image: item.imageID!, date: item.createdAt!, weight:item.weight!, calories: item.calories!)
                     }
                 }
             }
