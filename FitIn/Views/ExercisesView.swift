@@ -4,16 +4,18 @@
 //
 //  Created by Ailany Rodriguez on 3/24/23.
 //
-
 import SwiftUI
 
 struct ExercisesView: View {
-    let muscles: [MuscleGroup] = MuscleGroup.muscleGroups
+    
+    let muscles: [MuscleGroup] = Array(MuscleGroup.muscleGroups.values)
+
     
     var body: some View {
         NavigationView {
             List(muscles, id: \.id) { muscle in
-                // TODO: Navigation Link
+                NavigationLink (destination: ExerciseListView( muscleGroup: muscle)) {
+
                     HStack {
                         VStack(alignment: .leading, spacing: 10) {
                             Text(muscle.muscleName)
@@ -28,6 +30,7 @@ struct ExercisesView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 100)
+                    }
                 }
             }
         }
