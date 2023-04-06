@@ -1,6 +1,7 @@
 {
   "pins" : [
     {
+<<<<<<< HEAD
       "identity" : "nuke",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kean/Nuke.git",
@@ -10,6 +11,8 @@
       }
     },
     {
+=======
+>>>>>>> c1032b215dfc6d8affef56e0ae3ffcb7974691ee
       "identity" : "parse-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/parse-community/Parse-Swift.git",
