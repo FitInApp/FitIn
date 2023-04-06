@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		305C6C2529D8FA370008A589 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2429D8FA370008A589 /* Posts.swift */; };
+		305C6C2529D8FA370008A589 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2429D8FA370008A589 /* Post.swift */; };
 		305C6C2829DB7A7B0008A589 /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2729DB7A7B0008A589 /* PostComponent.swift */; };
 		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
 		3D681C4329D216F2005E9AE4 /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */; };
@@ -26,7 +26,6 @@
 		626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68029CE3C7700C24E32 /* HomeView.swift */; };
 		626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68229CE3C8500C24E32 /* TrackerView.swift */; };
 		626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68429CE3C9C00C24E32 /* ExercisesView.swift */; };
-		626FA69329D7C53500C24E32 /* ProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA69229D7C53500C24E32 /* ProgressCard.swift */; };
 		626FA69629D7C90600C24E32 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 626FA69529D7C90600C24E32 /* Nuke */; };
 		626FA69829D7D60800C24E32 /* WorkoutLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA69729D7D60800C24E32 /* WorkoutLog.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		305C6C2429D8FA370008A589 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		305C6C2429D8FA370008A589 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		305C6C2729DB7A7B0008A589 /* PostComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
 		3D04865529D2A4BF00297B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D681C3F29D214BF005E9AE4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -72,7 +71,6 @@
 		626FA68029CE3C7700C24E32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		626FA68229CE3C8500C24E32 /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
 		626FA68429CE3C9C00C24E32 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
-		626FA69229D7C53500C24E32 /* ProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCard.swift; sourceTree = "<group>"; };
 		626FA69729D7D60800C24E32 /* WorkoutLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,14 +101,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		305C6C2629DB7A650008A589 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				305C6C2729DB7A7B0008A589 /* PostComponent.swift */,
-			);
-			path = Objects;
-			sourceTree = "<group>";
-		};
 		3D681C4129D2169E005E9AE4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,10 +132,7 @@
 		626FA64E29CE302200C24E32 /* FitIn */ = {
 			isa = PBXGroup;
 			children = (
-				626FA68A29D7B5D600C24E32 /* StyledComponents */,
-				305C6C2629DB7A650008A589 /* Objects */,
-				626FA68A29D7B5D600C24E32 /* StyledComponents */,
-				305C6C2629DB7A650008A589 /* Objects */,
+				626FA68A29D7B5D600C24E32 /* Components */,
 				3D04865529D2A4BF00297B16 /* Info.plist */,
 				626FA67B29CE3C0600C24E32 /* Models */,
 				626FA67A29CE3BFF00C24E32 /* Views */,
@@ -202,20 +189,18 @@
 				626FA67C29CE3C2200C24E32 /* Exercise.swift */,
 				626FA67E29CE3C2E00C24E32 /* User.swift */,
 				626FA69729D7D60800C24E32 /* WorkoutLog.swift */,
-				305C6C2429D8FA370008A589 /* Posts.swift */,
-				626FA69729D7D60800C24E32 /* WorkoutLog.swift */,
-				305C6C2429D8FA370008A589 /* Posts.swift */,
+				305C6C2429D8FA370008A589 /* Post.swift */,
 				3DFEDDEE29D906AA00C20CDD /* MuscleGroup.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		626FA68A29D7B5D600C24E32 /* StyledComponents */ = {
+		626FA68A29D7B5D600C24E32 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				626FA69229D7C53500C24E32 /* ProgressCard.swift */,
+				305C6C2729DB7A7B0008A589 /* PostComponent.swift */,
 			);
-			path = StyledComponents;
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,10 +353,8 @@
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
-				626FA69329D7C53500C24E32 /* ProgressCard.swift in Sources */,
-				305C6C2529D8FA370008A589 /* Posts.swift in Sources */,
-				626FA69329D7C53500C24E32 /* ProgressCard.swift in Sources */,
-				305C6C2529D8FA370008A589 /* Posts.swift in Sources */,
+				305C6C2529D8FA370008A589 /* Post.swift in Sources */,
+				305C6C2529D8FA370008A589 /* Post.swift in Sources */,
 				3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */,
 				3DFEDDEF29D906AA00C20CDD /* MuscleGroup.swift in Sources */,
 				626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */,
