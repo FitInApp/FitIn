@@ -23,6 +23,9 @@
 		626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68029CE3C7700C24E32 /* HomeView.swift */; };
 		626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68229CE3C8500C24E32 /* TrackerView.swift */; };
 		626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68429CE3C9C00C24E32 /* ExercisesView.swift */; };
+		626FA69329D7C53500C24E32 /* ProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA69229D7C53500C24E32 /* ProgressCard.swift */; };
+		626FA69629D7C90600C24E32 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 626FA69529D7C90600C24E32 /* Nuke */; };
+		626FA69829D7D60800C24E32 /* WorkoutLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA69729D7D60800C24E32 /* WorkoutLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,8 @@
 		626FA68029CE3C7700C24E32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		626FA68229CE3C8500C24E32 /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
 		626FA68429CE3C9C00C24E32 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
+		626FA69229D7C53500C24E32 /* ProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCard.swift; sourceTree = "<group>"; };
+		626FA69729D7D60800C24E32 /* WorkoutLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DAE12EA29D0B3C400243136 /* ParseSwift in Frameworks */,
+				626FA69629D7C90600C24E32 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +128,7 @@
 		626FA64E29CE302200C24E32 /* FitIn */ = {
 			isa = PBXGroup;
 			children = (
+				626FA68A29D7B5D600C24E32 /* StyledComponents */,
 				3D04865529D2A4BF00297B16 /* Info.plist */,
 				626FA67B29CE3C0600C24E32 /* Models */,
 				626FA67A29CE3BFF00C24E32 /* Views */,
@@ -177,8 +184,17 @@
 			children = (
 				626FA67C29CE3C2200C24E32 /* Exercise.swift */,
 				626FA67E29CE3C2E00C24E32 /* User.swift */,
+				626FA69729D7D60800C24E32 /* WorkoutLog.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		626FA68A29D7B5D600C24E32 /* StyledComponents */ = {
+			isa = PBXGroup;
+			children = (
+				626FA69229D7C53500C24E32 /* ProgressCard.swift */,
+			);
+			path = StyledComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +215,7 @@
 			name = FitIn;
 			packageProductDependencies = (
 				3DAE12E929D0B3C400243136 /* ParseSwift */,
+				626FA69529D7C90600C24E32 /* Nuke */,
 			);
 			productName = FitIn;
 			productReference = 626FA64C29CE302200C24E32 /* FitIn.app */;
@@ -274,6 +291,7 @@
 			mainGroup = 626FA64329CE302200C24E32;
 			packageReferences = (
 				3DAE12E829D0B3C400243136 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				626FA69429D7C90500C24E32 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = 626FA64D29CE302200C24E32 /* Products */;
 			projectDirPath = "";
@@ -318,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626FA69829D7D60800C24E32 /* WorkoutLog.swift in Sources */,
 				3DDEA7EF29D3E871000FAA18 /* SignupView.swift in Sources */,
 				626FA67F29CE3C2E00C24E32 /* User.swift in Sources */,
 				626FA65229CE302200C24E32 /* ContentView.swift in Sources */,
@@ -325,6 +344,7 @@
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
+				626FA69329D7C53500C24E32 /* ProgressCard.swift in Sources */,
 				3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */,
 				626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */,
 			);
@@ -690,6 +710,14 @@
 				kind = branch;
 			};
 		};
+		626FA69429D7C90500C24E32 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -697,6 +725,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3DAE12E829D0B3C400243136 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
 			productName = ParseSwift;
+		};
+		626FA69529D7C90600C24E32 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 626FA69429D7C90500C24E32 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
