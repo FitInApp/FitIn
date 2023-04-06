@@ -10,7 +10,6 @@ import ParseSwift
 import SwiftUI
 
 struct Post : ParseObject {
-
     var objectId: String?
     var createdAt: Date?
     var updatedAt: Date?
@@ -22,8 +21,6 @@ struct Post : ParseObject {
     var date: Date?
     var weight: String?
     var calories: String?
-    
-    
 }
 
 extension Post {

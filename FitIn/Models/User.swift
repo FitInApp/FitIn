@@ -20,4 +20,6 @@ struct User: ParseUser {
     var email: String?
     var emailVerified: Bool?
     var authData: [String : [String : String]?]?
+    var posts: [Post]?
+    var workoutLog: [WorkoutLog]?
 }

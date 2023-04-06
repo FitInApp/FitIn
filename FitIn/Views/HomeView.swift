@@ -25,15 +25,27 @@ struct HomeView: View {
             Button(action: {addPost()
                 
             }) {
-                HStack {
-                    Text("TEMP Add Post").foregroundColor(.white).padding()
-                }
-            }.background(Color.black).cornerRadius(30)
+                HStack{
+                    Text("FITIN") //TODO: Replace with Logo
+                        .font(.custom("AllertaStencil-Regular", size: 40))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    Button("+ Post"){
+                        
+                    }
+                    .font(.subheadline)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 8)
+                            .foregroundColor(Color(.systemBackground))
+                            .background(Color(.label))
+                            .cornerRadius(8)
+                }.padding([.leading,.trailing], 16)
+                
+            }
             
             ScrollView {
                 VStack(spacing: 20) {
                     ForEach(items, id: \.objectId) { item in
-                        UserPost(userId: item.user!, text: item.weight!,image: item.imageID!, date: item.createdAt!, weight:item.weight!, calories: item.calories!)
+                        PostCard(userId: item.user!, text: item.weight!,image: item.imageID!, date: item.createdAt!, weight:item.weight!, calories: item.calories!)
                     }
                 }
             }

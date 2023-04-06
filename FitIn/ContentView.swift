@@ -11,14 +11,26 @@ let EXERCISE_VIEW_INDEX = 0
 let HOME_VIEW_INDEX = 1
 let TRACKER_VIEW_INDEX = 2
 
+struct Number {
+  static let negative: Character = "-"
+}
+let TAB_HEADINGS:[Int: String] = [
+    0: "Exercises",
+    1: "Home",
+    2: "Progress"
+]
+
 struct ContentView: View {
     @Environment(\.dismiss) private var dismiss
-    @State private var selectedTab = HOME_VIEW_INDEX
+    @State private var selectedTabIndex = HOME_VIEW_INDEX
+
     
     var body: some View {
         ZStack{
             VStack{
-                TabView(selection: $selectedTab) {
+            
+         
+                TabView(selection: $selectedTabIndex) {
                     ExercisesView()
                         .tabItem {
                             Image( "WeightLifterIcon")

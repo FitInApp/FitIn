@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import ParseSwift
 
-struct UserPost: View{
+struct PostCard: View{
     var userId:  User
     var text : String
     var image: URL
@@ -80,4 +80,11 @@ extension UIScreen{
    static let screenWidth = UIScreen.main.bounds.size.width
    static let screenHeight = UIScreen.main.bounds.size.height
    static let screenSize = UIScreen.main.bounds.size
+}
+
+
+struct PostPreview: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
 }
