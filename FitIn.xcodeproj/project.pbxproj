@@ -186,11 +186,8 @@
 			children = (
 				626FA67C29CE3C2200C24E32 /* Exercise.swift */,
 				626FA67E29CE3C2E00C24E32 /* User.swift */,
-<<<<<<< HEAD
 				626FA69729D7D60800C24E32 /* WorkoutLog.swift */,
-=======
 				3DFEDDEE29D906AA00C20CDD /* MuscleGroup.swift */,
->>>>>>> 947b904557883534de4d23d0204f9fe4ee370120
 			);
 			path = Models;
 			sourceTree = "<group>";
