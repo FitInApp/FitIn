@@ -142,11 +142,10 @@
 		626FA64E29CE302200C24E32 /* FitIn */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				626FA68A29D7B5D600C24E32 /* StyledComponents */,
-=======
 				305C6C2629DB7A650008A589 /* Objects */,
->>>>>>> f5f2cb4db8d299cb0eba4551545820f3a7c17cc6
+				626FA68A29D7B5D600C24E32 /* StyledComponents */,
+				305C6C2629DB7A650008A589 /* Objects */,
 				3D04865529D2A4BF00297B16 /* Info.plist */,
 				626FA67B29CE3C0600C24E32 /* Models */,
 				626FA67A29CE3BFF00C24E32 /* Views */,
@@ -202,11 +201,10 @@
 			children = (
 				626FA67C29CE3C2200C24E32 /* Exercise.swift */,
 				626FA67E29CE3C2E00C24E32 /* User.swift */,
-<<<<<<< HEAD
 				626FA69729D7D60800C24E32 /* WorkoutLog.swift */,
-=======
 				305C6C2429D8FA370008A589 /* Posts.swift */,
->>>>>>> f5f2cb4db8d299cb0eba4551545820f3a7c17cc6
+				626FA69729D7D60800C24E32 /* WorkoutLog.swift */,
+				305C6C2429D8FA370008A589 /* Posts.swift */,
 				3DFEDDEE29D906AA00C20CDD /* MuscleGroup.swift */,
 			);
 			path = Models;
@@ -359,11 +357,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				626FA69829D7D60800C24E32 /* WorkoutLog.swift in Sources */,
-=======
 				305C6C2829DB7A7B0008A589 /* PostComponent.swift in Sources */,
->>>>>>> f5f2cb4db8d299cb0eba4551545820f3a7c17cc6
+				626FA69829D7D60800C24E32 /* WorkoutLog.swift in Sources */,
+				305C6C2829DB7A7B0008A589 /* PostComponent.swift in Sources */,
 				3DDEA7EF29D3E871000FAA18 /* SignupView.swift in Sources */,
 				626FA67F29CE3C2E00C24E32 /* User.swift in Sources */,
 				626FA65229CE302200C24E32 /* ContentView.swift in Sources */,
@@ -371,11 +368,10 @@
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
-<<<<<<< HEAD
 				626FA69329D7C53500C24E32 /* ProgressCard.swift in Sources */,
-=======
 				305C6C2529D8FA370008A589 /* Posts.swift in Sources */,
->>>>>>> f5f2cb4db8d299cb0eba4551545820f3a7c17cc6
+				626FA69329D7C53500C24E32 /* ProgressCard.swift in Sources */,
+				305C6C2529D8FA370008A589 /* Posts.swift in Sources */,
 				3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */,
 				3DFEDDEF29D906AA00C20CDD /* MuscleGroup.swift in Sources */,
 				626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */,
