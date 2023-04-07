@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2084D2D329DF6DC2001967BB /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084D2D229DF6DC2001967BB /* ExerciseListView.swift */; };
 		305C6C2529D8FA370008A589 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2429D8FA370008A589 /* Post.swift */; };
-		305C6C2829DB7A7B0008A589 /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2729DB7A7B0008A589 /* PostComponent.swift */; };
 		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
 		3D681C4329D216F2005E9AE4 /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */; };
 		3DAE12EA29D0B3C400243136 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAE12E929D0B3C400243136 /* ParseSwift */; };
 		3DDEA7EF29D3E871000FAA18 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDEA7EE29D3E871000FAA18 /* SignupView.swift */; };
 		3DFEDDEF29D906AA00C20CDD /* MuscleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFEDDEE29D906AA00C20CDD /* MuscleGroup.swift */; };
+		624410A529E09446009BE0CB /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 624410A429E09446009BE0CB /* ParseSwift */; };
 		626FA65029CE302200C24E32 /* FitInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA64F29CE302200C24E32 /* FitInApp.swift */; };
 		626FA65229CE302200C24E32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA65129CE302200C24E32 /* ContentView.swift */; };
 		626FA65429CE302300C24E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626FA65329CE302300C24E32 /* Assets.xcassets */; };
@@ -26,8 +27,8 @@
 		626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68029CE3C7700C24E32 /* HomeView.swift */; };
 		626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68229CE3C8500C24E32 /* TrackerView.swift */; };
 		626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68429CE3C9C00C24E32 /* ExercisesView.swift */; };
-		626FA69629D7C90600C24E32 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 626FA69529D7C90600C24E32 /* Nuke */; };
-		626FA69829D7D60800C24E32 /* WorkoutLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA69729D7D60800C24E32 /* WorkoutLog.swift */; };
+		62B1D96529DFC02D001A72A9 /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1D96429DFC02D001A72A9 /* PostComponent.swift */; };
+		62B1D96B29DFC2D2001A72A9 /* WorkoutLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1D96A29DFC2D2001A72A9 /* WorkoutLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		305C6C2429D8FA370008A589 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2084D2D229DF6DC2001967BB /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
-		305C6C2729DB7A7B0008A589 /* PostComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
+		305C6C2429D8FA370008A589 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3D04865529D2A4BF00297B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D681C3F29D214BF005E9AE4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AllertaStencil-Regular.ttf"; sourceTree = "<group>"; };
@@ -72,7 +72,8 @@
 		626FA68029CE3C7700C24E32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		626FA68229CE3C8500C24E32 /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
 		626FA68429CE3C9C00C24E32 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
-		626FA69729D7D60800C24E32 /* WorkoutLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLog.swift; sourceTree = "<group>"; };
+		62B1D96429DFC02D001A72A9 /* PostComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
+		62B1D96A29DFC2D2001A72A9 /* WorkoutLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DAE12EA29D0B3C400243136 /* ParseSwift in Frameworks */,
-				626FA69629D7C90600C24E32 /* Nuke in Frameworks */,
+				624410A529E09446009BE0CB /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +133,7 @@
 		626FA64E29CE302200C24E32 /* FitIn */ = {
 			isa = PBXGroup;
 			children = (
-				626FA68A29D7B5D600C24E32 /* Components */,
+				62B1D96329DFBFF8001A72A9 /* Components */,
 				3D04865529D2A4BF00297B16 /* Info.plist */,
 				626FA67B29CE3C0600C24E32 /* Models */,
 				626FA67A29CE3BFF00C24E32 /* Views */,
@@ -190,17 +190,17 @@
 			children = (
 				626FA67C29CE3C2200C24E32 /* Exercise.swift */,
 				626FA67E29CE3C2E00C24E32 /* User.swift */,
-				626FA69729D7D60800C24E32 /* WorkoutLog.swift */,
 				305C6C2429D8FA370008A589 /* Post.swift */,
 				3DFEDDEE29D906AA00C20CDD /* MuscleGroup.swift */,
+				62B1D96A29DFC2D2001A72A9 /* WorkoutLog.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		626FA68A29D7B5D600C24E32 /* Components */ = {
+		62B1D96329DFBFF8001A72A9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				305C6C2729DB7A7B0008A589 /* PostComponent.swift */,
+				62B1D96429DFC02D001A72A9 /* PostComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -222,8 +222,7 @@
 			);
 			name = FitIn;
 			packageProductDependencies = (
-				3DAE12E929D0B3C400243136 /* ParseSwift */,
-				626FA69529D7C90600C24E32 /* Nuke */,
+				624410A429E09446009BE0CB /* ParseSwift */,
 			);
 			productName = FitIn;
 			productReference = 626FA64C29CE302200C24E32 /* FitIn.app */;
@@ -298,8 +297,7 @@
 			);
 			mainGroup = 626FA64329CE302200C24E32;
 			packageReferences = (
-				3DAE12E829D0B3C400243136 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
-				626FA69429D7C90500C24E32 /* XCRemoteSwiftPackageReference "Nuke" */,
+				624410A329E09446009BE0CB /* XCRemoteSwiftPackageReference "Parse-Swift" */,
 			);
 			productRefGroup = 626FA64D29CE302200C24E32 /* Products */;
 			projectDirPath = "";
@@ -344,19 +342,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626FA69829D7D60800C24E32 /* WorkoutLog.swift in Sources */,
-				305C6C2829DB7A7B0008A589 /* PostComponent.swift in Sources */,
-				626FA69829D7D60800C24E32 /* WorkoutLog.swift in Sources */,
-				305C6C2829DB7A7B0008A589 /* PostComponent.swift in Sources */,
 				3DDEA7EF29D3E871000FAA18 /* SignupView.swift in Sources */,
 				626FA67F29CE3C2E00C24E32 /* User.swift in Sources */,
+				62B1D96B29DFC2D2001A72A9 /* WorkoutLog.swift in Sources */,
 				626FA65229CE302200C24E32 /* ContentView.swift in Sources */,
 				2084D2D329DF6DC2001967BB /* ExerciseListView.swift in Sources */,
+				62B1D96529DFC02D001A72A9 /* PostComponent.swift in Sources */,
 				626FA65029CE302200C24E32 /* FitInApp.swift in Sources */,
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
-				305C6C2529D8FA370008A589 /* Post.swift in Sources */,
+				2084D2D329DF6DC2001967BB /* ExerciseListView.swift in Sources */,
 				305C6C2529D8FA370008A589 /* Post.swift in Sources */,
 				3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */,
 				3DFEDDEF29D906AA00C20CDD /* MuscleGroup.swift in Sources */,
@@ -716,7 +712,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3DAE12E829D0B3C400243136 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+		624410A329E09446009BE0CB /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/parse-community/Parse-Swift.git";
 			requirement = {
@@ -724,26 +720,13 @@
 				kind = branch;
 			};
 		};
-		626FA69429D7C90500C24E32 /* XCRemoteSwiftPackageReference "Nuke" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3DAE12E929D0B3C400243136 /* ParseSwift */ = {
+		624410A429E09446009BE0CB /* ParseSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3DAE12E829D0B3C400243136 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			package = 624410A329E09446009BE0CB /* XCRemoteSwiftPackageReference "Parse-Swift" */;
 			productName = ParseSwift;
-		};
-		626FA69529D7C90600C24E32 /* Nuke */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 626FA69429D7C90500C24E32 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

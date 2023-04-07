@@ -1,10 +1,9 @@
 //
-//  ExerciseLog.swift
+//  WorkoutLog.swift
 //  FitIn
 //
 //  Created by Ailany Rodriguez on 3/31/23.
 //
-
 import Foundation
 import ParseSwift
 
@@ -22,4 +21,3 @@ struct WorkoutLog : ParseObject {
     var setCount:Int?
     var caloriesBurned:Int?
 }
-

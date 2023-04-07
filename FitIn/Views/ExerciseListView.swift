@@ -16,7 +16,7 @@ struct ExerciseListView: View {
             List(muscleGroup.exerciseList, id: \.name){exercise in
                 HStack {
                     VStack(alignment: .leading, spacing: 10) {
-                        Text(exercise.name)
+                        Text(exercise.name!)
                             .fontWeight(.semibold)
                             .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                         Text(exercise.description)
@@ -24,7 +24,7 @@ struct ExerciseListView: View {
                             .lineLimit(2)
                     }
                     Spacer()
-                    Image(exercise.image)
+                    Image(exercise.image!)
                         .resizable()
                         .scaledToFit()
                         .frame(height: 100)
