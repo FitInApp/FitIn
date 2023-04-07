@@ -5,12 +5,18 @@
 //  Created by Ailany Rodriguez on 3/24/23.
 
 import Foundation
+import ParseSwift
 
-struct Exercise : Identifiable{
-    let id = UUID()
-    let name: String
-    let description: String
-    let image: String
+struct Exercise : ParseObject {
+    var originalData: Data?
+    var objectId: String?
+    var createdAt: Date?
+    var updatedAt: Date?
+    var ACL: ParseSwift.ParseACL?
+    
+    var name: String?
+    var description: String?
+    var image: String?
 }
 
 extension Exercise{

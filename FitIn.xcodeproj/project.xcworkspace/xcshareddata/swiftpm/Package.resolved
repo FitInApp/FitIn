@@ -1,24 +1,12 @@
 {
   "pins" : [
     {
-<<<<<<< HEAD
-      "identity" : "nuke",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/kean/Nuke.git",
-      "state" : {
-        "revision" : "7f73ceaeacd5df75a7994cd82e165ad9ff1815db",
-        "version" : "9.6.1"
-      }
-    },
-    {
-=======
->>>>>>> c1032b215dfc6d8affef56e0ae3ffcb7974691ee
       "identity" : "parse-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/parse-community/Parse-Swift.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "3d4bb13acd7496a49b259e541928ad493219d363"
+        "revision" : "dc7666f774755be333f48f25c4d8bead0a1a6877",
+        "version" : "4.14.2"
       }
     }
   ],
