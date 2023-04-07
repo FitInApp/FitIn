@@ -11,11 +11,13 @@ struct TrackerView: View {
     
     @State private var path = NavigationPath()
     
+    let pageName = "Progress"
+    
     var body: some View {
         
         VStack {
             HStack{
-                Text("Progress".uppercased())
+                Text(pageName.uppercased())
                     .font(.custom("AllertaStencil-Regular", size: 40))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Button("+ Add"){
