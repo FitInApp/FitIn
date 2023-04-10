@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2084D2D329DF6DC2001967BB /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084D2D229DF6DC2001967BB /* ExerciseListView.swift */; };
+		2084D2D929E4AE84001967BB /* ExerciseDetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084D2D829E4AE84001967BB /* ExerciseDetView.swift */; };
 		305C6C2529D8FA370008A589 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2429D8FA370008A589 /* Posts.swift */; };
 		305C6C2829DB7A7B0008A589 /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2729DB7A7B0008A589 /* PostComponent.swift */; };
 		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		2084D2D229DF6DC2001967BB /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
+		2084D2D829E4AE84001967BB /* ExerciseDetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetView.swift; sourceTree = "<group>"; };
 		305C6C2429D8FA370008A589 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		305C6C2729DB7A7B0008A589 /* PostComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
 		3D04865529D2A4BF00297B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				3D681C3F29D214BF005E9AE4 /* LoginView.swift */,
 				3DDEA7EE29D3E871000FAA18 /* SignupView.swift */,
 				2084D2D229DF6DC2001967BB /* ExerciseListView.swift */,
+				2084D2D829E4AE84001967BB /* ExerciseDetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				626FA65029CE302200C24E32 /* FitInApp.swift in Sources */,
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
+				2084D2D929E4AE84001967BB /* ExerciseDetView.swift in Sources */,
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
 				305C6C2529D8FA370008A589 /* Posts.swift in Sources */,
 				3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */,
