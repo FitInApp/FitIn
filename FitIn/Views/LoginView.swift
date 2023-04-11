@@ -38,7 +38,7 @@ struct LoginView: View {
                             .foregroundColor(Color.black)
                             .font(.headline)
                             .disableAutocorrection(true)
-                            //.textInputAutoCapitalization(.never)
+                            .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
                             
                         
                         SecureField("Password", text: $password)
