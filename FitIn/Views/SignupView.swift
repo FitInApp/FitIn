@@ -40,6 +40,7 @@ struct SignupView: View {
                             .keyboardType(.emailAddress)
                             .disableAutocorrection(true)
                             .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
+                        
                         TextField("Username", text: $username)
                             .frame(width: 280)
                             .padding()
@@ -49,6 +50,7 @@ struct SignupView: View {
                             .font(.headline)
                             .disableAutocorrection(true)
                             .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
+                            
                         SecureField("Password", text: $password)
                             .frame(width: 280)
                             .padding()
@@ -58,6 +60,7 @@ struct SignupView: View {
                             .font(.headline)
                             .disableAutocorrection(true)
                             .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
+                        
                     }
                     VStack {
                         Button {
