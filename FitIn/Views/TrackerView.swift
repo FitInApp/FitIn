@@ -46,8 +46,8 @@ struct TrackerView: View {
 
 
     var body: some View {
-        
-        VStack(spacing:20){
+        //TODO: Add userprofile / preferences.
+        VStack(alignment:.leading,spacing:20){
             HStack{
                 Text(pageName.uppercased())
                     .font(.custom("AllertaStencil-Regular", size: 40))
@@ -69,7 +69,7 @@ struct TrackerView: View {
    
             ScrollView(.vertical){
                 VStack(alignment: .leading){
-                    Text("Weight").font(.title)
+                    Text("Weight").font(.title2)
                     Chart {
                                     ForEach(londonWeatherData) { item in
                                         LineMark(
@@ -91,8 +91,16 @@ struct TrackerView: View {
                         }.frame(width: 250,height: 125).background(.black).clipShape(RoundedRectangle(cornerRadius: 12))
                     }.padding(.horizontal)
                 }.scrollIndicators(.hidden)
+
+                Divider().padding(16)
+
+                VStack(alignment: .leading){
+                    Text("My Posts").font(.title2)
+                    //TODO: Add user's personal posts here similar to homescreen.
+                }
+                
             }
-            Spacer().frame(width:.infinity,height: 3).overlay(.pink)
+           
         }
         
     }
