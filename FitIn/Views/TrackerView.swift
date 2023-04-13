@@ -10,6 +10,7 @@ import SwiftUI
 struct TrackerView: View {
     
     @State private var path = NavigationPath()
+    @State private var showingAddModal = false
     
     let pageName = "Progress"
     
@@ -22,6 +23,8 @@ struct TrackerView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Button("+ Add"){
                     onAddButtonTapped()
+                }.sheet(isPresented: $showingAddModal) {
+                    AddLogModal().foregroundColor(.black)
                 }
                 .font(.subheadline)
                         .padding(.horizontal, 12)
@@ -38,7 +41,7 @@ struct TrackerView: View {
     
     
     func onAddButtonTapped () {
-        //
+        showingAddModal.toggle()
     }
     func addWorkout () {
         //TODO: implement add workout using Exercise object and add to a new object that holds historical information

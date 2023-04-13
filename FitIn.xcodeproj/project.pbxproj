@@ -11,10 +11,11 @@
 		305C6C2529D8FA370008A589 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2429D8FA370008A589 /* Post.swift */; };
 		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
 		3D681C4329D216F2005E9AE4 /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */; };
-		3DAE12EA29D0B3C400243136 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAE12E929D0B3C400243136 /* ParseSwift */; };
 		3DDEA7EF29D3E871000FAA18 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDEA7EE29D3E871000FAA18 /* SignupView.swift */; };
 		3DFEDDEF29D906AA00C20CDD /* MuscleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFEDDEE29D906AA00C20CDD /* MuscleGroup.swift */; };
 		624410A529E09446009BE0CB /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 624410A429E09446009BE0CB /* ParseSwift */; };
+		624410A729E76D3A009BE0CB /* AddLogModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624410A629E76D3A009BE0CB /* AddLogModal.swift */; };
+		624410AB29E77194009BE0CB /* StyledStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624410AA29E77194009BE0CB /* StyledStepper.swift */; };
 		626FA65029CE302200C24E32 /* FitInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA64F29CE302200C24E32 /* FitInApp.swift */; };
 		626FA65229CE302200C24E32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA65129CE302200C24E32 /* ContentView.swift */; };
 		626FA65429CE302300C24E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626FA65329CE302300C24E32 /* Assets.xcassets */; };
@@ -56,6 +57,8 @@
 		3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AllertaStencil-Regular.ttf"; sourceTree = "<group>"; };
 		3DDEA7EE29D3E871000FAA18 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		3DFEDDEE29D906AA00C20CDD /* MuscleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroup.swift; sourceTree = "<group>"; };
+		624410A629E76D3A009BE0CB /* AddLogModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLogModal.swift; sourceTree = "<group>"; };
+		624410AA29E77194009BE0CB /* StyledStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledStepper.swift; sourceTree = "<group>"; };
 		626FA64C29CE302200C24E32 /* FitIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		626FA64F29CE302200C24E32 /* FitInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitInApp.swift; sourceTree = "<group>"; };
 		626FA65129CE302200C24E32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				62B1D96429DFC02D001A72A9 /* PostComponent.swift */,
+				624410A629E76D3A009BE0CB /* AddLogModal.swift */,
+				624410AA29E77194009BE0CB /* StyledStepper.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -346,10 +351,12 @@
 				626FA67F29CE3C2E00C24E32 /* User.swift in Sources */,
 				62B1D96B29DFC2D2001A72A9 /* WorkoutLog.swift in Sources */,
 				626FA65229CE302200C24E32 /* ContentView.swift in Sources */,
+				624410A729E76D3A009BE0CB /* AddLogModal.swift in Sources */,
 				2084D2D329DF6DC2001967BB /* ExerciseListView.swift in Sources */,
 				62B1D96529DFC02D001A72A9 /* PostComponent.swift in Sources */,
 				626FA65029CE302200C24E32 /* FitInApp.swift in Sources */,
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
+				624410AB29E77194009BE0CB /* StyledStepper.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
 				2084D2D329DF6DC2001967BB /* ExerciseListView.swift in Sources */,
