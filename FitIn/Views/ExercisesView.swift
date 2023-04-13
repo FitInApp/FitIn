@@ -35,6 +35,7 @@ struct ExercisesView: View {
             }
         }
         .navigationTitle("Workouts")
+        .navigationBarBackButtonHidden(true)
     }
 }
 

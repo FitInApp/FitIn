@@ -1,9 +1,19 @@
+//
+//  ExerciseDetView.swift
+//  FitIn
+//
+//  Created by Matias Fuenzalida on 4/6/23.
+//
+
+
 import SwiftUI
 
 struct ExerciseDetView: View {
     var exercise: Exercise
 
-    // Add this function to handle the save button action
+    @Environment(\.presentationMode) var presentationMode 
+
+    
     func saveWorkout() {
         print("Workout saved")
     }
@@ -30,6 +40,16 @@ struct ExerciseDetView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                        Text("Workouts")
+                    }
+                }
+            }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: saveWorkout) {
                     Image(systemName: "square.and.arrow.down")
@@ -37,5 +57,6 @@ struct ExerciseDetView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }

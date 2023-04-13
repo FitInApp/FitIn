@@ -2,7 +2,7 @@
 //  Exercise.swift
 //  FitIn
 //
-//  Created by Ailany Rodriguez on 3/24/23.
+//  Created by Matias Fuenzalida on 3/24/23.
 
 import Foundation
 
