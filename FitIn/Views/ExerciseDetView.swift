@@ -1,50 +1,41 @@
-//
-//  ExerciseDetView.swift
-//  FitIn
-//
-//  Created by Ailany Rodriguez on 3/24/23.
-//
-
 import SwiftUI
 
 struct ExerciseDetView: View {
-
     var exercise: Exercise
 
+    // Add this function to handle the save button action
+    func saveWorkout() {
+        print("Workout saved")
+    }
+
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack {
             Image(exercise.image)
                 .resizable()
-                .scaledToFit()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300, height: 300)
+                .padding(.top, 50)
 
             Text(exercise.name)
-                .fontWeight(.bold)
                 .font(.title)
+                .fontWeight(.bold)
+                .padding(.top, 20)
 
             Text(exercise.description)
                 .font(.body)
-                .padding(.top)
+                .padding(.top, 20)
+                .padding(.horizontal, 20)
 
             Spacer()
-
-            Button(action: {
-                // Save the workout to user's saved workouts list
-                // Here you would write the code to save the workout to the user's saved workouts list
-            }) {
-                Text("Save")
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(8)
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: saveWorkout) {
+                    Image(systemName: "square.and.arrow.down")
+                        .font(.title)
+                }
             }
         }
-        .padding()
-        .navigationTitle(exercise.name)
-    }
-}
-
-struct ExerciseDetView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExerciseDetView(exercise: Exercise.allExercises[]!)
     }
 }

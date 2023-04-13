@@ -19,7 +19,7 @@ extension MuscleGroup {
     static let muscleGroups = [
         "Chest": MuscleGroup(muscleName: "Chest",
                              descriptions: "Take your chest workouts to the next level.",
-                             imageName: "chest-model",
+                             imageName: "ches   t-model",
         exerciseList: [
                         Exercise.allExercises["Pushups"]!,
                         Exercise.allExercises["Bench Press"]!,
