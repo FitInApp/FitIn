@@ -12,6 +12,7 @@ struct HomeView: View {
     @State private var weight = "100"
     @State private var calories = "2000"
     @Environment(\.colorScheme) var colorScheme
+    @State private var showingAddPostModal = false
     func addPost() {
         print("Add Post Entry")
         let currentDateTime = Date()
@@ -30,7 +31,10 @@ struct HomeView: View {
                         .font(.custom("AllertaStencil-Regular", size: 40))
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Button("+ Post"){
-                        
+                        showingAddPostModal.toggle()
+                    }.sheet(isPresented: $showingAddPostModal) {
+                        AddPostModal().foregroundColor(.black).presentationDetents([.medium])
+                        .presentationDragIndicator(.visible)
                     }
                     .font(.subheadline)
                             .padding(.horizontal, 12)
