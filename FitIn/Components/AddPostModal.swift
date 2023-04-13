@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct AddLogModal: View {
+struct AddPostModal: View {
     @State private var repCount = 10
     @State private var setCount = 3
     @State private var selectedMuscleGroup = "Arms"
@@ -87,6 +87,6 @@ struct AddLogModal: View {
 
 struct AddLogModal_Previews: PreviewProvider {
     static var previews: some View {
-        AddLogModal()
+        AddPostModal()
     }
 }

@@ -42,8 +42,6 @@ struct TrackerView: View {
     
     let pageName = "Tracker"
    
-    
-
 
     var body: some View {
         //TODO: Add userprofile / preferences.
@@ -55,7 +53,7 @@ struct TrackerView: View {
                 Button("+ Log"){
                     onAddButtonTapped()
                 }.sheet(isPresented: $showingAddModal) {
-                    AddLogModal().foregroundColor(.black).presentationDetents([.medium])
+                    AddPostModal().foregroundColor(.black).presentationDetents([.medium])
                         .presentationDragIndicator(.visible)
                 }
                 .font(.subheadline)
@@ -114,13 +112,7 @@ struct TrackerView: View {
     }
 }
 
-struct AddWorkoutView: View {
-    var body: some View{
-        VStack{
-            
-        }
-    }
-}
+
 
 struct TrackerView_Previews: PreviewProvider {
     static var previews: some View {
