@@ -50,15 +50,17 @@ struct AddLogModal: View {
                         
                     }label: {
                         HStack{
-                            Text(selectedExercise)
-                            Label(selectedExercise, systemImage: "arrow.up.and.down").labelStyle(.iconOnly)
+                            Text(selectedExercise).frame(width: 150)
+                            Spacer()
+                            Image(systemName: "arrow.up.and.down")
+                            
                         }.font(.body).padding(.horizontal, 16).padding(.vertical,10).pickerStyle(.menu).menuStyle(.button).buttonStyle(.plain)
                             .foregroundColor(.white)
                             .tint(.white)
                             .background {
                                 RoundedRectangle(cornerSize:CGSize(width: 8, height: 8))
-                                    .fill(.thickMaterial)
-                            }.colorScheme(.dark)
+                                    .fill(.thickMaterial).frame(width: 200)
+                            }.colorScheme(.dark).fixedSize().frame(width:200)
                     
                     }
                 }
@@ -72,6 +74,12 @@ struct AddLogModal: View {
                 StyledStepper(value: $repCount, in: 0...50, label: { Text("No. Reps").font(.title2) }, style: CapsuleStepperStyle())
                     .controlSize(.small)
                     .font(.callout)
+                
+                Button(action: {
+                    //TODO: On press, submit form as post
+                }, label: {
+                    Text("Submit").frame(maxWidth: .infinity)
+                }).buttonStyle(.borderedProminent).controlSize(.large).font(.title3).tint(.black).edgesIgnoringSafeArea(.horizontal).foregroundColor(.white)
             }.padding(.horizontal, 16)
         }
     }

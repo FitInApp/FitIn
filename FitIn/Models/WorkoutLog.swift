@@ -15,9 +15,7 @@ struct WorkoutLog : ParseObject {
     var ACL: ParseSwift.ParseACL?
     
     var exercise:Exercise?
-    var duration:Float?
-    var weight:Float?
+    var personWeight:Float?
     var repCount:Int?
     var setCount:Int?
-    var caloriesBurned:Int?
 }
