@@ -21,7 +21,7 @@ struct ExerciseListView: View {
                             Text(exercise.name ?? "")
                                 .fontWeight(.semibold)
                                 .font(.title2)
-                            Text(exercise.description)
+                            Text(exercise.description ?? "") // Update this line
                                 .font(.subheadline)
                                 .lineLimit(2)
                         }
