@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		2084D2D329DF6DC2001967BB /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084D2D229DF6DC2001967BB /* ExerciseListView.swift */; };
 		2084D2D929E4AE84001967BB /* ExerciseDetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084D2D829E4AE84001967BB /* ExerciseDetView.swift */; };
-		305C6C2529D8FA370008A589 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2429D8FA370008A589 /* Posts.swift */; };
-		305C6C2829DB7A7B0008A589 /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2729DB7A7B0008A589 /* PostComponent.swift */; };
+		305C6C2529D8FA370008A589 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2429D8FA370008A589 /* Post.swift */; };
 		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
 		3D681C4329D216F2005E9AE4 /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */; };
 		3DDEA7EF29D3E871000FAA18 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDEA7EE29D3E871000FAA18 /* SignupView.swift */; };
@@ -30,6 +29,7 @@
 		626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68029CE3C7700C24E32 /* HomeView.swift */; };
 		626FA68329CE3C8500C24E32 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68229CE3C8500C24E32 /* TrackerView.swift */; };
 		626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626FA68429CE3C9C00C24E32 /* ExercisesView.swift */; };
+		62B1D96529DFC02D001A72A9 /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1D96429DFC02D001A72A9 /* PostComponent.swift */; };
 		62B1D96B29DFC2D2001A72A9 /* WorkoutLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1D96A29DFC2D2001A72A9 /* WorkoutLog.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +53,7 @@
 /* Begin PBXFileReference section */
 		2084D2D229DF6DC2001967BB /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
 		2084D2D829E4AE84001967BB /* ExerciseDetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetView.swift; sourceTree = "<group>"; };
-		305C6C2429D8FA370008A589 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
-		305C6C2729DB7A7B0008A589 /* PostComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
+		305C6C2429D8FA370008A589 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3D04865529D2A4BF00297B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D681C3F29D214BF005E9AE4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AllertaStencil-Regular.ttf"; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		626FA68029CE3C7700C24E32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		626FA68229CE3C8500C24E32 /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
 		626FA68429CE3C9C00C24E32 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
+		62B1D96429DFC02D001A72A9 /* PostComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
 		62B1D96A29DFC2D2001A72A9 /* WorkoutLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

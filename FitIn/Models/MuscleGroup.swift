@@ -18,7 +18,7 @@ struct MuscleGroup : Identifiable {
 extension MuscleGroup {
     static let muscleGroups = [
         "Chest": MuscleGroup(muscleName: "Chest",
-                             descriptions: "Take your chest workouts to the next level.",
+                             description: "Take your chest workouts to the next level.",
                              imageName: "ches   t-model",
         exerciseList: [
                         Exercise.allExercises["Pushups"]!,
@@ -26,7 +26,7 @@ extension MuscleGroup {
                         Exercise.allExercises["Chest Flyes"]!
                     ]),
         "Back": MuscleGroup(muscleName: "Back",
-                    descriptions: "For your lats to your traps and everything in between.",
+                    description: "For your lats to your traps and everything in between.",
                     imageName: "back-model",
                     exerciseList: [
                         Exercise.allExercises["Pullups"]!,
@@ -35,7 +35,7 @@ extension MuscleGroup {
                         
                     ]),
         "Arms": MuscleGroup(muscleName: "Arms",
-                    descriptions: "From curls to dips to push-ups and more.",
+                    description: "From curls to dips to push-ups and more.",
                     imageName: "arms-model",
                     exerciseList: [
                         Exercise.allExercises["Bicep Curls"]!,
@@ -44,7 +44,7 @@ extension MuscleGroup {
                         
                     ]),
         "Legs": MuscleGroup(muscleName: "Legs",
-                    descriptions: "Strengthen and tone every part of your lower body.",
+                    description: "Strengthen and tone every part of your lower body.",
                     imageName: "legs-model",
                     exerciseList: [
                         Exercise.allExercises["Squats"]!,
@@ -53,7 +53,7 @@ extension MuscleGroup {
                         
                     ]),
         "Abs": MuscleGroup(muscleName: "Abs",
-                    descriptions: "Tone and strengthen your core.",
+                    description: "Tone and strengthen your core.",
                     imageName: "abs-model",
                     exerciseList: [
                         Exercise.allExercises["Planks"]!,

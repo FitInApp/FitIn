@@ -5,28 +5,27 @@
 //  Created by Matias Fuenzalida on 4/6/23.
 //
 
-
 import SwiftUI
 
 struct ExerciseDetView: View {
     var exercise: Exercise
 
-    @Environment(\.presentationMode) var presentationMode 
+    @Environment(\.presentationMode) var presentationMode
 
-    
+
     func saveWorkout() {
         print("Workout saved")
     }
 
     var body: some View {
         VStack {
-            Image(exercise.image)
+            Image(exercise.image ?? "")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 300)
                 .padding(.top, 50)
 
-            Text(exercise.name)
+            Text(exercise.name ?? "")
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top, 20)
