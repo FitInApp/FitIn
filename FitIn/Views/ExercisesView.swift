@@ -56,6 +56,8 @@ struct ExercisesView: View {
                 }.navigationBarTitle(pageName.localizedUppercase, displayMode: .large)
             }
         }
+        .navigationTitle("Workouts")
+        .navigationBarBackButtonHidden(true)
     }
 }
 

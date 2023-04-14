@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2084D2D329DF6DC2001967BB /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084D2D229DF6DC2001967BB /* ExerciseListView.swift */; };
+		2084D2D929E4AE84001967BB /* ExerciseDetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084D2D829E4AE84001967BB /* ExerciseDetView.swift */; };
 		305C6C2529D8FA370008A589 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C6C2429D8FA370008A589 /* Post.swift */; };
 		3D681C4029D214BF005E9AE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D681C3F29D214BF005E9AE4 /* LoginView.swift */; };
 		3D681C4329D216F2005E9AE4 /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D681C4229D216F2005E9AE4 /* AllertaStencil-Regular.ttf */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		2084D2D229DF6DC2001967BB /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
+		2084D2D829E4AE84001967BB /* ExerciseDetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetView.swift; sourceTree = "<group>"; };
 		305C6C2429D8FA370008A589 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3D04865529D2A4BF00297B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D681C3F29D214BF005E9AE4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				3D681C3F29D214BF005E9AE4 /* LoginView.swift */,
 				3DDEA7EE29D3E871000FAA18 /* SignupView.swift */,
 				2084D2D229DF6DC2001967BB /* ExerciseListView.swift */,
+				2084D2D829E4AE84001967BB /* ExerciseDetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				626FA68129CE3C7700C24E32 /* HomeView.swift in Sources */,
 				624410AB29E77194009BE0CB /* StyledStepper.swift in Sources */,
 				626FA67D29CE3C2200C24E32 /* Exercise.swift in Sources */,
+				2084D2D929E4AE84001967BB /* ExerciseDetView.swift in Sources */,
 				626FA68529CE3C9C00C24E32 /* ExercisesView.swift in Sources */,
 				2084D2D329DF6DC2001967BB /* ExerciseListView.swift in Sources */,
 				305C6C2529D8FA370008A589 /* Post.swift in Sources */,

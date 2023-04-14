@@ -2,7 +2,7 @@
 //  Exercise.swift
 //  FitIn
 //
-//  Created by Ailany Rodriguez on 3/24/23.
+//  Created by Matias Fuenzalida on 3/24/23.
 
 import Foundation
 import ParseSwift
@@ -21,24 +21,81 @@ struct Exercise : ParseObject {
 
 extension Exercise{
     static let allExercises = [
+        
+        //
+        //Arms Workout
+        //
         "Bicep Curls" : Exercise(name: "Bicep Curls",
-                                 description: "A bench press is a weight training exercise that involves lifting a barbell or dumbbells while lying on a bench.",
+                                 description: "Bicep curls are an isolation exercise that target the biceps, and involve lifting a weight with your arms while keeping your elbows close to your body.",
                                  image: "bicepcurls-model"),
+        "Dips" : Exercise(name: "Dips",
+                          description: "Dips are a compound exercise that primarily target the triceps, chest, and shoulders, and involve lowering and raising your body by bending and extending your arms.",
+                          image: "dips-model"),
+        "Tricep Extensions" : Exercise(name: "Tricep Extensions",
+                                       description: "Tricep extensions are an isolation exercise that target the triceps, and involve extending your arms with a weight while keeping your elbows close to your head.",
+                                       image: "tricep-extension-model"),
+
+        //
+        // LEGS
+        //
         "Squats": Exercise(name: "Squats",
                            description: "Squats are a weight training exercise that involve lifting a barbell or dumbbells while standing and bending the knees to lower the body, then rising back up to a standing position.",
                            image: "squats-model"),
+        "Lunges": Exercise(name: "Lunges",
+                           description: "Lunges are a unilateral exercise that primarily target the legs and glutes, and involve stepping forward or backward and bending your knees to lower your body.",
+                           image: "lunges-model"),
+        "Deadlifts": Exercise(name: "Deadlifts",
+                              description: "Deadlifts are a compound exercise that primarily target the back, glutes, and legs, and involve lifting a barbell or dumbbell from the ground to a standing position.",
+                              image: "deadlift-model"),
+
+        //
+        // CHEST
+        //
         "Pushups": Exercise(name: "Pushups",
                             description: "Pushups are a bodyweight exercise that involve lowering and raising the body by pushing off the ground with the arms while maintaining a plank-like position.",
                             image: "pushups-model"),
+        "Bench Press" : Exercise(name: "Bench Press",
+                                 description: "Bench press is a weight training exercise that involves lifting a barbell or dumbbells while lying on a bench, targeting the chest and triceps.",
+                                 image: "benchpress-model"),
+        "Chest Flyes" : Exercise(name: "Chest Flyes",
+                                 description: "Chest flyes are an isolation exercise that primarily target the chest muscles, and involve lying on a bench with a weight in each hand and extending your arms out to the sides.",
+                                 image: "chest-flyes-model"),
+
+        //
+        // BACK
+        //
         "Pullups": Exercise(name: "Pullups",
                             description: "Pullups are a bodyweight exercise that involve pulling the body up towards a bar while hanging from it, using the muscles of the back, arms, and shoulders.",
                             image: "pullup-model"),
+        "Rows" : Exercise(name: "Rows",
+                           description: "Rows are a compound exercise that target the back and arms, and involve pulling a weight towards your body while keeping your elbows close to your sides.",
+                           image: "rows-model"),
+        "Lat Pulldowns" : Exercise(name: "Lat Pulldowns",
+                                   description: "Lat pulldowns are an isolation exercise that primarily target the lats and biceps, and involve pulling a weight down towards your chest while sitting on a machine.",
+                                   image: "lat-pulldown-model"),
+
+        
+        //ABS
         "Planks": Exercise(name: "Planks",
                            description: "Planks are a bodyweight exercise that involve holding a straight and rigid position, supporting the body weight on the forearms and toes while maintaining a straight line from head to heels, engaging the core muscles.",
-                           image: "planks-model")
+                           image: "planks-model"),
         
+        "Sit-ups": Exercise(name: "Sit-ups",
+                            description: "Sit-ups are a classic exercise that primarily target the abs, and involve lying on your back, bending your knees, and lifting your upper body to your knees.",
+                            image: "sit-ups-model"),
+        
+        "Crunches": Exercise(name: "Crunches",
+                             description: "Crunches are a classic exercise that primarily target the abs, and involve lying on your back with your knees bent, then lifting your head, neck, and shoulders towards your knees.",
+                             image: "crunches-model"),
+                             
+        "Russian Twists": Exercise(name: "Russian Twists",
+                                   description: "Russian twists are a core exercise that primarily target the obliques, and involve sitting on the floor with your knees bent, then twisting your torso side to side while holding a weight or medicine ball.",
+                                   image: "russian-twist-model")
+
     ]
 }
+
+
 
 
     //Arms:
