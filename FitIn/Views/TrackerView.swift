@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Charts
+import ParseSwift
+
 struct WeatherData: Identifiable {
     let id = UUID()
     let date: Date
@@ -39,21 +41,31 @@ struct TrackerView: View {
     
     @State private var path = NavigationPath()
     @State private var showingAddModal = false
+    @State private var showingPhotosModal = false
+    @State private var userPosts: [Post]? = User.current?.posts
+    @State private var userWeightHistory: [WeightLog] = User.current?.weightHistory ?? []
+    
     
     let pageName = "Tracker"
-   
-
+    var weightLogChartDataArray: [WeightLogChartData] = []
+    
+  
     var body: some View {
-        //TODO: Add userprofile / preferences.
+        let weightLogChartDataArray = userWeightHistory.map { getWeightLogChartDataPoint(weightLog: $0) }
+                
+        let maxValue = weightLogChartDataArray.map { $0.weight }.max() ?? 0
+        let minValue = weightLogChartDataArray.map { $0.weight }.min() ?? 0
+             
+        
         VStack(alignment:.leading,spacing:20){
             HStack{
                 Text(pageName.uppercased())
                     .font(.custom("AllertaStencil-Regular", size: 40))
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Button("+ Log"){
+                Button("+ Daily Log"){
                     onAddButtonTapped()
                 }.sheet(isPresented: $showingAddModal) {
-                    AddPostModal().foregroundColor(.black).presentationDetents([.medium])
+                    AddLogModal(userWeightLog: $userWeightHistory).foregroundColor(.black).presentationDetents([.fraction(0.75)])
                         .presentationDragIndicator(.visible)
                 }
                 .font(.subheadline)
@@ -67,35 +79,69 @@ struct TrackerView: View {
    
             ScrollView(.vertical){
                 VStack(alignment: .leading){
-                    Text("Weight").font(.title2)
-                    Chart {
-                                    ForEach(londonWeatherData) { item in
-                                        LineMark(
-                                            x: .value("Month", item.date),
-                                            y: .value("Temp", item.temperature)
-                                        )
-                                    }
-                                }
-                    .frame(height: 200).foregroundColor(.red)
-                }.padding(20)
-                
+                    
+                    if(!weightLogChartDataArray.isEmpty){
+                        Text("Weight").font(.title2)
+                        
+                        Chart {
+                            ForEach(weightLogChartDataArray) { item in
+                                LineMark(
+                                    x: .value("Date", item.date),
+                                    y: .value("Weight", item.weight)
+                                )
+                            }
+                        }
+                        .frame(height: 200).foregroundColor(.red)
+                    }else{
+                        Chart{
+                            
+                        }.frame(height: 200).foregroundColor(.red)
+                    }
+                    
+                }.padding(.horizontal, 20)
+                Spacer().frame(height: 16)
+           
                 ScrollView(.horizontal){
                     HStack{
-                        VStack{
-                        Text("sidfu")
-                        }.frame(width: 250,height: 125).background(.black).clipShape(RoundedRectangle(cornerRadius: 12))
-                        VStack{
-                        Text("sidfu")
-                        }.frame(width: 250,height: 125).background(.black).clipShape(RoundedRectangle(cornerRadius: 12))
-                    }.padding(.horizontal)
+                        Button {
+                            showingPhotosModal.toggle()
+                        } label: {
+                            Label("Progress Photos", systemImage: "photo")
+                        }.sheet(isPresented: $showingPhotosModal) {
+                            ProgressGallery()
+                        }
+
+                       
+                    }.frame(width: 360,height: 80).background(.pink.opacity(0.1)).clipShape(RoundedRectangle(cornerRadius: 12)).padding(16).foregroundColor(.black)
                 }.scrollIndicators(.hidden)
 
                 Divider().padding(16)
 
                 VStack(alignment: .leading){
                     Text("My Posts").font(.title2)
-                    //TODO: Add user's personal posts here similar to homescreen.
-                }
+                    VStack(spacing: 20) {
+                        if(userPosts == nil){
+                            Text("No posts to display").frame(height: 50).foregroundColor(.gray).padding(.top, 50)
+                            Button("+ Post"){
+                                onAddButtonTapped()
+                            }.sheet(isPresented: $showingAddModal) {
+                                AddPostModal().foregroundColor(.black).presentationDetents([.fraction(0.75)])
+                                    .presentationDragIndicator(.visible)
+                            }
+                            .font(.subheadline)
+                                    .padding(.horizontal, 12)
+                                    .padding(.vertical, 8)
+                                    .foregroundColor(Color(.systemBackground))
+                                    .background(Color(.label))
+                                    .cornerRadius(8)
+                        }else{
+                            ForEach(userPosts ?? [] , id: \.objectId) { item in
+                                PostCard(userId: item.user!, text: item.weight!,image: item.imageID!, date: item.createdAt!, weight:item.weight!, calories: item.calories!)
+                            }
+                        }
+                    }.frame(width: 350).edgesIgnoringSafeArea(.horizontal)
+                    
+                }.frame(width: 350).edgesIgnoringSafeArea(.horizontal)
                 
             }
            
@@ -107,9 +153,20 @@ struct TrackerView: View {
     func onAddButtonTapped () {
         showingAddModal.toggle()
     }
-    func addWorkout () {
-        //TODO: implement add workout using Exercise object and add to a new object that holds historical information
+    func getWeightLogChartDataPoint (weightLog: WeightLog) -> WeightLogChartData {
+        guard let date = weightLog.createdAt, let weight = weightLog.weight else {
+               print("Error: createdAt or weight is nil")
+            return WeightLogChartData(date: Date.now, weight: 0)
+           }
+           return WeightLogChartData(date: date, weight: weight)
     }
+   
+}
+
+struct WeightLogChartData :Identifiable{
+    let id = UUID()
+    let date: Date
+    let weight: Int
 }
 
 

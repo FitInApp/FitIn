@@ -21,8 +21,7 @@ struct ExercisesView: View {
         UINavigationBar.appearance().standardAppearance = navBarAppearance
         UINavigationBar.appearance().compactAppearance = navBarAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
-       
-        
+
     }
     
     var body: some View {

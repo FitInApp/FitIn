@@ -13,8 +13,8 @@ struct AddPostModal: View {
     @State private var setCount = 3
     @State private var selectedMuscleGroup = "Arms"
     @State private var selectedExercise:String = "Select"
+    
     let muscleGroupNameList = Array(MuscleGroup.muscleGroups.keys).sorted()
-  
     
     var body: some View {
         HStack (alignment: .bottom) {
@@ -85,7 +85,7 @@ struct AddPostModal: View {
     }
 }
 
-struct AddLogModal_Previews: PreviewProvider {
+struct AddPostModal_Previews: PreviewProvider {
     static var previews: some View {
         AddPostModal()
     }
