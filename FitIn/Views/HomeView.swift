@@ -21,7 +21,7 @@ struct HomeView: View {
         print(newPost.readObjects()!)
     }
     var body: some View {
-        let items: [Post] = newPost.readObjects()!
+        let items: [Post] = newPost.readObjects() ?? []
         VStack{
             Button(action: {addPost()
                 

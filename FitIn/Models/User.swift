@@ -7,6 +7,7 @@
 
 import Foundation
 import ParseSwift
+import UIKit
 
 struct User: ParseUser {
     var originalData: Data?
@@ -21,4 +22,16 @@ struct User: ParseUser {
     var emailVerified: Bool?
     var authData: [String : [String : String]?]?
     var posts: [Post]?
+    var weightHistory: [WeightLog]?
+    var progressImages: [ImageObject]?
+}
+
+struct WeightLog: ParseObject{
+    var originalData: Data?
+    var objectId: String?
+    var createdAt: Date?
+    var updatedAt: Date?
+    var ACL: ParseSwift.ParseACL?
+    
+    var weight: Int?
 }
