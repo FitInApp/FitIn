@@ -12,6 +12,7 @@ struct HomeView: View {
     @State private var weight = "100"
     @State private var calories = "2000"
     @Environment(\.colorScheme) var colorScheme
+    @State private var showingAddPostModal = false
     func addPost() {
         print("Add Post Entry")
         let currentDateTime = Date()
@@ -25,15 +26,30 @@ struct HomeView: View {
             Button(action: {addPost()
                 
             }) {
-                HStack {
-                    Text("TEMP Add Post").foregroundColor(.white).padding()
-                }
-            }.background(Color.black).cornerRadius(30)
+                HStack{
+                    Text("FITIN") //TODO: Replace with Logo
+                        .font(.custom("AllertaStencil-Regular", size: 40))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    Button("+ Post"){
+                        showingAddPostModal.toggle()
+                    }.sheet(isPresented: $showingAddPostModal) {
+                        AddPostModal().foregroundColor(.black).presentationDetents([.medium])
+                        .presentationDragIndicator(.visible)
+                    }
+                    .font(.subheadline)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 8)
+                            .foregroundColor(Color(.systemBackground))
+                            .background(Color(.label))
+                            .cornerRadius(8)
+                }.padding([.leading,.trailing], 16)
+                
+            }
             
             ScrollView {
                 VStack(spacing: 20) {
                     ForEach(items, id: \.objectId) { item in
-                        UserPost(userId: item.user!, text: item.weight!,image: item.imageID!, date: item.createdAt!, weight:item.weight!, calories: item.calories!)
+                        PostCard(userId: item.user!, text: item.weight!,image: item.imageID!, date: item.createdAt!, weight:item.weight!, calories: item.calories!)
                     }
                 }
             }

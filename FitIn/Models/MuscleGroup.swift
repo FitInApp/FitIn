@@ -10,7 +10,7 @@ import Foundation
 struct MuscleGroup : Identifiable {
     let id = UUID()
     let muscleName: String
-    let descriptions: String
+    let description: String
     let imageName: String
     let exerciseList: [Exercise]
 }

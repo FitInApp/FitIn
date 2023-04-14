@@ -38,7 +38,7 @@ struct LoginView: View {
                             .foregroundColor(Color.black)
                             .font(.headline)
                             .disableAutocorrection(true)
-                            //.textInputAutoCapitalization(.never)
+                            .textInputAutocapitalization(/*@START_MENU_TOKEN@*/.never/*@END_MENU_TOKEN@*/)
                             
                         
                         SecureField("Password", text: $password)
@@ -53,6 +53,7 @@ struct LoginView: View {
                     }
                     
                     VStack {
+                        
                         Button {
                             User.login(username: username, password: password) { result in
                                 switch result {
@@ -68,10 +69,10 @@ struct LoginView: View {
                         } label: {
                             Text("Login")
                                 .font(.headline)
-                                .foregroundColor(colorScheme == .dark ? Color.black : Color.white)
                                 .frame(width: 280)
                                 .padding()
-                                .background(colorScheme == .dark ? Color.white : Color.black)
+                                .foregroundColor(Color(.systemBackground))
+                                .background( Color(.label))
                                 .cornerRadius(8)
                         }
                         HStack {
@@ -81,7 +82,7 @@ struct LoginView: View {
                             } label: {
                                 Text("Sign Up")
                                     .font(.headline)
-                                    .foregroundColor(Color.blue)
+                                    .foregroundColor(Color.accentColor)
                             }
                         }
                     }
